@@ -36,3 +36,26 @@ Return structured JSON:
   "label": "<CATEGORY>",
   "response": "<DRAFT_REPLY>"
 }
+''''
+Constraints
+
+- Maintain professional tone
+- Do not hallucinate commitments
+- Do not expose internal system details
+
+
+---
+
+### (Optional but strong)
+### `prompts/output_schema.md`
+```md
+# AI Agent Output Schema
+
+```json
+{
+  "label": "IMPORTANT | SPAM | PROMOTIONAL | EDUCATIONAL | SPONSORSHIP",
+  "response": "string | null"
+}
+- label is mandatory
+- response is required only if an action is taken
+
